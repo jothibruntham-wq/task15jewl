@@ -1,0 +1,33 @@
+.coll
+{position:relative;
+  width:100%;
+  max-width:860px;
+  aspect-ratio:16/9;
+  margin:0 auto;
+  overflow:hidden;
+  border-radius:16px;
+  background:#9ec3cf;
+  font-family:'Barlow',system-ui,sans-serif;
+  color:#1c2b33
+}
+.coll:before,.coll:after
+{
+  content:"";
+  position:absolute;
+  left:0;right:0;height:17%;background:#b7cdac;z-index:0}
+.coll:before{top:0}.coll:after{bottom:0}
+.coll-head{position:absolute;top:19%;width:100%;text-align:center;z-index:2}
+.coll-head small{display:block;font-size:11px;letter-spacing:.08em}
+.coll-head h1{margin:0;font:italic 400 34px/1 'Cormorant Garamond',Georgia,serif;letter-spacing:.02em}
+.coll-row{position:absolute;left:0;right:0;top:46%;display:flex;justify-content:center;gap:10px;z-index:3;padding:0 20px}
+.tile{width:76px;height:92px;border-radius:10px;background:rgba(255,255,255,.55);display:grid;place-items:center;font-size:34px;overflow:hidden}
+.tile img{width:100%;height:100%;object-fit:cover}
+.coll-main{position:absolute;inset:36% 8% 20%;display:flex;align-items:center;justify-content:center;gap:11%;opacity:0;z-index:2}
+.coll .swiper{width:190px;height:210px;margin:0;overflow:visible}
+.coll .swiper-slide{border-radius:12px;background:#fff;display:grid;place-items:center;font-size:84px;box-shadow:0 8px 20px rgba(0,0,0,.18);overflow:hidden}
+.coll .swiper-slide img{width:100%;height:100%;object-fit:contain}
+.info{min-width:150px}
+.info h2{margin:0 0 4px;font:italic 400 22px 'Cormorant Garamond',Georgia,serif}
+.info p{margin:0 0 8px;font-weight:600;font-size:13px}
+.info button{background:#111;color:#fff;border:0;border-radius:3px;padding:6px 18px;font-size:10px;letter-spacing:.06em;cursor:pointer}
+.handle{margin-top:18px;font-weight:700;font-size:12px;color:#fff}
